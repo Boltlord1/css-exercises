@@ -29,4 +29,19 @@ ul.dropdown-menu li:hover {
   display: block;
 }
 
+.visible {
+  animation: dropdown 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
 
+@keyframes dropdown {
+  from {
+    display: none;
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  to {
+    display: block;
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+}
